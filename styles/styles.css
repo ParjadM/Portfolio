@@ -15,6 +15,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.hover {
+    transition: all 2s;
+    cursor: pointer;
+}
+.hover:hover {
+    transform: scale(1.5);
+}
 
 /* Body */
 body {
