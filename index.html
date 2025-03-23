@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Parjad portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/professional logo.png" alt="Logo">
+            <h1>Parjad</h1>
+        </div>
+        <nav>
+            <a>Home</a>
+            <a>Portfolio</a>
+            <a>About Me</a>
+            <a>Contact</a>
+        </nav>
+
+    </header>
+    <main>
+        <section data-aos="zoom-in">
+                <div id="Home" class="section">
+                    <div id="HomeAbout">
+                        <div>Hi, I’m a Web Developer.My Name Is Parjad Minooei and Welcome to my Portfolio website!</div>
+                        <div class="button">
+                            <button>Download CV</button>
+                            <button>Contact Me</button>
+                        </div>
+                        <div class="images">
+                            <img src="images/Github.jpg" alt="Github">
+                            <img src="images/LinkedIn.jpg" alt="LinkedIn">
+                        </div>
+                    </div>
+                    <img src="images/Parjad.jpg" alt="Parjad" id="Parjad">
+                </div>
+        </section>
+        <section data-aos="fade-right">
+            <div id="Portfolio" class="section">    
+                <div class="title">Project</div>
+                <div id="section1">
+                    <div>CodeQuest: Enjoy an interactive game, to test your JavaScript</div>
+                    <img src="images/CodeQuest.jpg" alt="CodeQuest">
+                </div>
+                <div id="section-group">
+                    <div id="section2">
+                        <div>AboutMeDeployed</div>
+                        <img src="images/Small.jpg" alt="AboutMeDeployed">
+                    </div>
+                    <div id="section3">
+                        <div>MarkDown</div>
+                        <img src="images/MarkDown.jpg" alt="MarkDown">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-left" >
+            <div id="AboutMe" class="section">
+                <div class="title">About Me</div>
+                <div id="container">    
+                    <div>
+                        <img src="images/Parjad.jpg" alt="Parjad" id="Parjad2">
+                    </div> 
+                    <div id="inner">
+                        <div>Hi There! I’m Parjad, a <span>Web Developer</span> and <span>Programmer</span>. Who Enjoying developing websites and apps. I welcome you to my portfolio website, where i show case my skills and knowledge. If you ever wanted to contact me, please don’t hesitate i’m available at the contact section below.</div>
+                        <div>Building website is my passion, however i do not stop there! I try my best to become a better program as a whole making application using other software languages. below is my set of skills and tools that i know and planning to learn..</div>
+                        <div id="images">
+                            <img src="images/C++.jpg" alt="C++" class="skills">
+                            <img src="images/Java.jpg" alt="Java" class="skills">
+                            <img src="images/CSharp.jpg" alt="C#" class="skills">
+                            <img src="images/HTML.jpg" alt="HTML" class="skills">
+                            <img src="images/CSS.jpg" alt="CSS" class="skills">
+                            <img src="images/JavaScript.jpg" alt="JavaScript" class="skills">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section data-aos="fade-up">
+            <div id="Contact" class="section">
+                <div class="title">Contact Me</div>
+                <form>
+                    <div>
+                        <label for="Name" class="label" id="test">Name:</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label for="Email" class="label">Email:</label>
+                        <input type="email" name="Email" id="Email">
+                    </div>
+                    <div>
+                        <label for="Comment">Comment:</label>
+                        <textarea name="Comment" id="Comment" cols="60" rows="10"></textarea>
+                    </div>
+                    <div class="group">
+                        <button>Submit</button>
+                        <img src="images/LinkedIn.jpg" alt="LinkedIn" class="img">
+                        <img src="images/Github.jpg" alt="Github" class="img">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="logo">        
+                <img src="images/professional logo.png" alt="Logo" id="logo2">
+                <div>Parjad Minooei © 2025, All Right Reserved</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+</body>
+</html>
