@@ -6,6 +6,10 @@
   --button: #B497D6;
 }
 
+header,footer, section,img {
+    max-width: 100%;;
+}
+
 span {
     font-weight: bold;
     font-size: 22px;
@@ -46,7 +50,7 @@ main {
 section {
     scroll-snap-align: start;
     height: 100dvh; 
-    width: 100%;
+    
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -76,6 +80,7 @@ header img {
     height: 60px;
     border-radius: 50%;
     margin-right: 25px;
+    
     
 }
 
@@ -160,6 +165,7 @@ header a {
     flex: 1;
     height: 46px;
     width: 46px;
+    
 }
 
 #Parjad {
@@ -211,6 +217,7 @@ header a {
     width: 400px;
     display: block;
     
+    
 }
 #section1 div {
     display: flex;
@@ -248,6 +255,7 @@ header a {
 #section2 img {
     width: 325px;
     height: 150px;
+    
 }
 #section3 div,
 #section2 div {
@@ -358,6 +366,7 @@ form div {
 .img {
     width: 46px;
     height: 46px;
+    
 }
 
 .group {
@@ -442,6 +451,7 @@ header img {
     border-radius: 50%;
     margin-right: 15px;
     
+    
 }
 
 #logo {
@@ -524,6 +534,7 @@ header a {
     flex: 1;
     height: 46px;
     width: 46px;
+    
 }
 
 #Parjad {
@@ -557,6 +568,7 @@ header a {
     height: 170px;
     width: 290px;
     display: block;
+    
     
 }
 #section1 div {
@@ -595,6 +607,7 @@ header a {
 #section2 img {
     width: 260px;
     height: 115px;
+    
 }
 #section3 div,
 #section2 div {
@@ -701,6 +714,7 @@ form div {
 .img {
     width: 46px;
     height: 46px;
+    
 }
 
 .group {
@@ -738,6 +752,10 @@ footer {
 
 
 @media screen and (max-width: 320px) {
+img {
+    max-width: 100%;
+}
+
 /* Body */
 body {
     background-color: #E1E2EF;
@@ -799,6 +817,7 @@ header img {
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
+    
     
 }
 
@@ -908,6 +927,7 @@ header a {
     width: 155px;
     display: block;
     
+    
 }
 #section1 div {
     display: flex;
@@ -946,6 +966,7 @@ header a {
 #section2 img {
     width: 180px;
     height: 75px;
+    
 }
 #section3 div,
 #section2 div {
@@ -1051,6 +1072,7 @@ form div {
     margin-top: 10px;
     width: 28px;
     height: 28px;
+    
 }
 
 .group {
