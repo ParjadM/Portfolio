@@ -1,10 +1,14 @@
-
 :root {
   --blue: linear-gradient(#05204A, #0C4CB0);
   --header: linear-gradient(#BFACAA, #59504F);
   --border: linear-gradient(#A3D2CA, #CBCCB5, #9BB1C0);
   --button: #B497D6;
 }
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}    
 
 header,footer, section,img {
     max-width: 100%;;
