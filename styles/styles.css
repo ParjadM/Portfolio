@@ -10,7 +10,7 @@ body {
     max-width: 100%;
 }    
 
-header,footer, section,img {
+img {
     max-width: 100%;;
 }
 
@@ -47,8 +47,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
-
 }
 
 section {
@@ -152,9 +150,6 @@ header a {
     align-items: center;
     gap: 125px;
     
-}
-.button button {
-    flex: 1;
 }
 
 .images {
@@ -409,7 +404,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", sans-serif; ;
-
+    margin-right: 50px;
 }
 /* SPAN */
 span {
@@ -448,14 +443,13 @@ header {
     background: var(--header);
     justify-content: space-between;
     height: 70px;
+    max-width: 100%;
 }
 header img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
-    
-    
+    margin-right: 15px;    
 }
 
 #logo {
@@ -468,7 +462,7 @@ header nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 25px;
+    margin-left: 25px;
 }
 header h1 {
     font-family: "Open Sans";
@@ -476,7 +470,6 @@ header h1 {
     color: #000000;
 }
 header a {
-    margin-left: 25px;
     font-family: "Open Sans";
     font-size: 28px;
     color: #000000;
@@ -519,11 +512,11 @@ header a {
     justify-content: space-evenly;
     margin-top: 50px;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     
 }
-.button button {
-    flex: 1;
+button {
+    gap: 20px;
 }
 
 .images {
@@ -636,7 +629,7 @@ header a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #inner {
     display: flex;
@@ -644,15 +637,14 @@ header a {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    width: 390px;
+    width: 380px;
     height: 430px;
     font-size: 16px;
     color: #FFFFFF;
     background: var(--blue);
     border: 10px solid transparent;
     border-image: var(--border) 1;
-    margin: 0px;
-    padding: 0px;;
+    margin-right: 50px;
 }
 #inner div {
     padding: 0px 0px;
@@ -661,6 +653,7 @@ header a {
     border-radius: 100px;
     width: 270px;
     height: 400px;
+    margin-left: 50px;
 }
 
 #images{
@@ -724,10 +717,6 @@ form div {
 .group {
     padding-left: 450px;
 }
-button {
-   
-    margin-left: -30px;
-}
 
 
 
@@ -763,9 +752,8 @@ footer {
   /* Body */
   body {
       background-color: #E1E2EF;
-      margin: 0;
-      padding: 0;
       font-family: "Montserrat", sans-serif;
+      margin-right: 20px;;
   }
 
   /* SPAN */
@@ -819,7 +807,7 @@ footer {
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-right: 5px;
   }
 
   /* Hamburger icon*/
@@ -877,17 +865,18 @@ footer {
       flex-direction: column;
       align-items: center;
       background: var(--blue);
-      width: 290px;
+      width: 270px;
       height: 565px;
       border: 10px solid transparent;
       border-image: var(--border) 1;
+      margin-right: 10px;
   }
   #HomeAbout {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 240px;
+      width: 220px;
   }
   #HomeAbout div {
       font-family: "Montserrat";
