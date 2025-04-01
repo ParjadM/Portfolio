@@ -4,11 +4,6 @@
   --border: linear-gradient(#A3D2CA, #CBCCB5, #9BB1C0);
   --button: #B497D6;
 }
-body {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}    
 
 img {
     max-width: 100%;;
@@ -37,7 +32,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", sans-serif; ;
-
+    max-width: 100%;
 }
 
 /* main */
@@ -169,7 +164,7 @@ header a {
 
 #Parjad {
     border-radius: 100px;
-    width: 262px;
+    max-width: 262px;
     height: 393px;
 }
 
@@ -304,7 +299,7 @@ header a {
 }
 #Parjad2 {
     border-radius: 100px;
-    width: 350px;
+    max-width: 350px;
     height: 530px;
 }
 
@@ -398,13 +393,17 @@ footer {
 /* Media Query */
 /* tablet */
 @media screen and (max-width: 768px) {
+img {
+      max-width: 100%;
+  }
 /* Body */
 body {
     background-color: #E1E2EF;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;;
+    max-width: 768px;
     margin: 0px;
     padding: 0px;
-    font-family: "Montserrat", sans-serif; ;
-    margin-right: 50px;
 }
 /* SPAN */
 span {
@@ -424,8 +423,8 @@ button {
 .title {
     text-align: center;
     background: var(--blue);
-    width: 650px;
-    height: 80px;
+    max-width: 650px;
+    max-height: 80px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
     color: #FFFFFF;
@@ -536,7 +535,7 @@ button {
 
 #Parjad {
     border-radius: 100px;
-    width: 175px;
+    max-width: 175px;
     height: 265px;
 }
 
@@ -651,7 +650,7 @@ button {
 }
 #Parjad2 {
     border-radius: 100px;
-    width: 270px;
+    max-width: 270px;
     height: 400px;
     margin-left: 50px;
 }
@@ -754,6 +753,8 @@ footer {
       background-color: #E1E2EF;
       font-family: "Montserrat", sans-serif;
       margin-right: 20px;;
+      width: 320px;
+      
   }
 
   /* SPAN */
@@ -908,7 +909,7 @@ footer {
   }
   #Parjad {
       border-radius: 100px;
-      width: 150px;
+      max-width: 150px;
       height: 223px;
   }
   /* PROJECT */
