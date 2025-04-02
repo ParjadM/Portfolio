@@ -4,6 +4,12 @@
   --border: linear-gradient(#A3D2CA, #CBCCB5, #9BB1C0);
   --button: #B497D6;
 }
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
 
 span {
     font-weight: bold;
@@ -12,6 +18,9 @@ span {
 
 html {
     scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 .hover {
@@ -40,24 +49,41 @@ main {
     gap: 100px;
 }
 
-section {
-    scroll-snap-align: start;
-    height: 100dvh; 
-    
+.section {
+    scroll-snap-align: start; 
+    max-width: 1200px;
+    width: 100%;
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    margin: 0 auto;
 }
 
 
 
 
 /* button */
-button {
-    width: 175px;
+.btn {
+    display: inline-block;
+    max-width: 175px;
+    width: 100%;
     height: 60px;
     background-color: var(--button);
     border-radius: 50px;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.button {
+    max-width: 550px;
+    width: 100%;
+    gap: 125px;
+    padding-top: 30px;
 }
 
 
@@ -66,12 +92,14 @@ header {
     display:flex;
     background: var(--header);
     justify-content: space-between;
+    width: 100%;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 header img {
-    width: 60px;
+    max-width: 60px;
+    width: 100%;
     height: 60px;
     border-radius: 50%;
     margin-right: 25px;
@@ -79,7 +107,7 @@ header img {
     
 }
 
-#logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +117,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
+    padding-right: 50px;
 }
 header h1 {
     font-family: "Open Sans";
@@ -111,7 +139,8 @@ header a {
     justify-content: space-around;
     align-items: center;
     background: var(--blue);
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 450px;
     margin-top: 100px;
     border: 10px solid transparent;
@@ -122,7 +151,8 @@ header a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     
 }
 #HomeAbout div {
@@ -136,14 +166,7 @@ header a {
     text-align: center;
 
 }
-.button {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    align-items: center;
-    gap: 125px;
-    
-}
+
 
 .images {
     display: flex;
@@ -156,8 +179,9 @@ header a {
 .images img {
     flex: 1;
     height: 46px;
-    width: 46px;
-    
+    max-width: 46px;
+
+    width: 100%;    
 }
 
 #Parjad {
@@ -171,7 +195,8 @@ header a {
 .title {
     text-align: center;
     background: var(--blue);
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 80px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
@@ -188,6 +213,8 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
     gap: 10px;
 }
 
@@ -198,7 +225,8 @@ header a {
     justify-content: space-around;
     text-align: center;
     background: var(--blue);
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 260px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
@@ -206,7 +234,8 @@ header a {
 
 #section1 img {
     height: 240px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     display: block;
     
     
@@ -216,7 +245,8 @@ header a {
     justify-content: center;
     align-items: center;
     height: 120px;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     color: #FFFFFF;
     font-size: 32px;
 }
@@ -226,7 +256,8 @@ header a {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    width: 1219px;
+    max-width: 1200px;
+    width: 100%;
     height: 260px;
     gap: 120px;
     margin-top: 10px;
@@ -237,7 +268,8 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 575px;
+    max-width: 575px;
+    width: 100%;
     height: 260px;
     background: var(--blue);
     border: 10px solid transparent;
@@ -245,7 +277,8 @@ header a {
 }
 #section3 img,
 #section2 img {
-    width: 325px;
+    max-width: 325px;
+    width: 100%;
     height: 150px;
     
 }
@@ -263,12 +296,15 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
     gap: 20px
 }
 
 .skills{
     height: 50px;
-    width: 50px;
+    max-width: 50px;
+    width: 100%;
 }
 
 #container {
@@ -284,7 +320,8 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 685px;
+    max-width: 685px;
+    width: 100%;
     height: 550px;
     font-size: 20px;
     color: #FFFFFF;
@@ -298,6 +335,7 @@ header a {
 #Parjad2 {
     border-radius: 100px;
     max-width: 350px;
+    width: 100%;
     height: 530px;
 }
 
@@ -313,7 +351,10 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
     gap: 20px;
+    padding-bottom: 30px;
 }
 
 form {
@@ -322,7 +363,8 @@ form {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 500px;
     font-size: 20px;
     color: #FFFFFF;
@@ -331,15 +373,16 @@ form {
     border-image: var(--border) 1;
 }
 form div input {
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
     height: 50px;
+    padding-right: 250px;
 }
 form div label {
     text-align: center;
     font-size: 32px;
     color: #FFFFFF;
     margin-left: 30px;
-    padding-right: 20px;
 }
 .label {
     padding-right: 90px;
@@ -352,17 +395,20 @@ form div {
     flex-direction: row; 
     align-items: flex-start;
     gap: 10px;
-    width: 75%;
+    max-width: 75%;
 }
 
 .img {
-    width: 46px;
+    max-width: 46px;
+    width: 100%;
     height: 46px;
     
 }
 
 .group {
-    padding-left: 450px;
+    max-width: 500px;
+    width: 100%;
+    padding-left: 125px;
 }
 
 
@@ -376,12 +422,13 @@ footer {
     height: 100px;
 }
 
-#logo div {
+.logo div {
     margin-left: 25px;
 }
 
 #logo2 {
-    width: 60px;
+    max-width: 60px;
+    width: 100%;
     height: 60px;
     border-radius: 100px;
 }
@@ -391,15 +438,59 @@ footer {
 /* Media Query */
 /* tablet */
 @media screen and (max-width: 768px) {
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.section {
+    scroll-snap-align: start; 
+    max-width: 650px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+}
+
+
+
+
+/* button */
+.btn {
+    display: inline-block;
+    max-width: 155px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--button);
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.button {
+    max-width: 550px;
+    width: 100%;
+    gap: 125px;
+    padding-top: 30px;
+}
 img {
       max-width: 100%;
+        width: 100%;
   }
 /* Body */
 body {
     background-color: #E1E2EF;
     font-family: "Montserrat", sans-serif; 
     text-align: center;;
-    max-width: 768px;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -409,19 +500,14 @@ span {
     font-size: 14px;
 }
 
-/* button */
-button {
-    width: 155px;
-    height: 50px;
-    background-color: var(--button);
-    border-radius: 50px;
-}
+
 
 /* TITLE */
 .title {
     text-align: center;
     background: var(--blue);
     max-width: 650px;
+    width: 100%;
     max-height: 80px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
@@ -444,12 +530,13 @@ header {
 }
 header img {
     width: 50px;
+    width: 100%;
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;    
 }
 
-#logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,8 +566,9 @@ header a {
     justify-content: space-around;
     align-items: center;
     background: var(--blue);
-    width: 650px;
-    height: 400px;
+    max-width: 650px;
+    width: 100%;
+    /* height: 400px; */
     margin-top: 100px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
@@ -491,6 +579,7 @@ header a {
     justify-content: space-between;
     align-items: center;
     width: 370px;
+    width: 100%;
     
 }
 #HomeAbout div {
@@ -512,9 +601,6 @@ header a {
     gap: 20px;
     
 }
-button {
-    gap: 20px;
-}
 
 .images {
     display: flex;
@@ -525,16 +611,18 @@ button {
 
 }
 .images img {
-    flex: 1;
     height: 46px;
     width: 46px;
+    width: 100%;
     
 }
 
 #Parjad {
     border-radius: 100px;
     max-width: 175px;
-    height: 265px;
+    width: 100%;
+    max-height: 265px;
+    height: auto;
 }
 
 /* PROJECT */
@@ -542,6 +630,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 650px;
+    width: 100%;
     gap: 10px;
 }
 
@@ -553,6 +643,7 @@ button {
     text-align: center;
     background: var(--blue);
     width: 645px;
+    width: 100%;
     height: 210px;
     border: 10px solid transparent;
     border-image: var(--border) 1;
@@ -561,6 +652,7 @@ button {
 #section1 img {
     height: 170px;
     width: 290px;
+    width: 100%;
     display: block;
     
     
@@ -571,6 +663,7 @@ button {
     align-items: center;
     height: 110px;
     width: 220px;
+    width: 100%;
     color: #FFFFFF;
     font-size: 22px;
 }
@@ -580,7 +673,8 @@ button {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    width: 665px;
+    max-width: 665px;
+    width: 100%;
     height: 220px;
     gap: 40px;
     margin-top: 10px;
@@ -591,7 +685,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 315px;
+    max-width: 315px;
+    width: 100%;
     height: 220px;
     background: var(--blue);
     border: 10px solid transparent;
@@ -599,7 +694,8 @@ button {
 }
 #section3 img,
 #section2 img {
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
     height: 115px;
     
 }
@@ -619,14 +715,17 @@ button {
 
 .skills{
     height: 35px;
-    width: 35px;
+    width: 100%;
+    max-width: 35px;
 }
 
 #container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    max-width: 665px;
+    width: 100%;
 }
 #inner {
     display: flex;
@@ -635,6 +734,7 @@ button {
     justify-content: space-between;
     text-align: center;
     width: 380px;
+    width: 100%;
     height: 430px;
     font-size: 16px;
     color: #FFFFFF;
@@ -649,8 +749,9 @@ button {
 #Parjad2 {
     border-radius: 100px;
     max-width: 270px;
+    width: 100%;
     height: 400px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 #images{
@@ -673,7 +774,8 @@ form {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
     height: 480px;
     color: #FFFFFF;
     background: var(--blue);
@@ -682,6 +784,7 @@ form {
 }
 form div input {
     width: 380px;
+    width: 100%;
     height: 50px;
 }
 form div label {
@@ -706,10 +809,13 @@ form div {
 }
 
 .img {
-    width: 46px;
+    max-width: 46px;
+    width: 100%;
     height: 46px;
+
     
 }
+
 
 
 
@@ -725,7 +831,7 @@ footer {
     font-size: 16px;
 }
 
-#logo div {
+.logo div {
     margin-left: 25px;
 }
 
@@ -736,54 +842,8 @@ footer {
 }
 }
 
-
-
-
-@media screen and (max-width: 320px) {
-  img {
-      max-width: 100%;
-  }
-
-  /* Body */
-  body {
-      background-color: #E1E2EF;
-      font-family: "Montserrat", sans-serif;
-      margin-right: 20px;;
-      width: 320px;
-      
-  }
-
-  /* SPAN */
-  span {
-      font-weight: bold;
-      font-size: 12px;
-  }
-
-  /* button */
-  button {
-      width: 165px;
-      height: 55px;
-      background-color: var(--button);
-      border-radius: 50px;
-  }
-
-  /* TITLE */
-  .title {
-      text-align: center;
-      background: var(--blue);
-      width: 250px;
-      height: 60px;
-      border: 10px solid transparent;
-      border-image: var(--border) 1;
-      color: #FFFFFF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Montserrat";
-      font-size: 20px;
-  }
-
-  /* Header */
+@media screen and (max-width: 700px) {
+/* Header */
   header {
       display: flex;
       background: var(--header);
@@ -794,7 +854,7 @@ footer {
       padding: 0 10px;
   }
 
-  #logo {
+  .logo {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -806,8 +866,7 @@ footer {
       border-radius: 50%;
       margin-right: 5px;
   }
-
-  /* Hamburger icon*/
+/* Hamburger icon*/
   .test {
       display: flex;
       flex-direction: column;
@@ -855,6 +914,100 @@ footer {
     #nav a:first-child {
         border-top: none;
     }
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+    
+  img {
+      max-width: 100%;
+  }
+    .section {
+    scroll-snap-align: start; 
+    max-width: 300px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+}
+#quest {
+    display: none;
+}
+
+
+
+/* button */
+.btn {
+    display: inline-block;
+    max-width: 165px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--button);
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.button {
+    max-width: 550px;
+    width: 100%;
+    gap: 125px;
+    padding-top: 30px;
+}
+
+  /* Body */
+  body {
+      background-color: #E1E2EF;
+      font-family: "Montserrat", sans-serif;
+      margin-right: 20px;;
+      max-width: 320px;
+      width: 100%;
+      
+  }
+
+  /* SPAN */
+  span {
+      font-weight: bold;
+      font-size: 12px;
+  }
+
+  /* button */
+  button {
+      max-width: 165px;
+      width: 100%;
+      height: 55px;
+      background-color: var(--button);
+      border-radius: 50px;
+  }
+
+  /* TITLE */
+  .title {
+      text-align: center;
+      background: var(--blue);
+      max-width: 250px;
+      width: 100%;
+      height: 60px;
+      border: 10px solid transparent;
+      border-image: var(--border) 1;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat";
+      font-size: 20px;
+  }
+
+  
+
+  
   /* Home */
   #Home {
       display: flex;
@@ -862,7 +1015,8 @@ footer {
       flex-direction: column;
       align-items: center;
       background: var(--blue);
-      width: 270px;
+      max-width: 270px;
+      width: 100%;
       height: 565px;
       border: 10px solid transparent;
       border-image: var(--border) 1;
@@ -873,7 +1027,8 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 220px;
+      max-width: 220px;
+      width: 100%;
   }
   #HomeAbout div {
       font-family: "Montserrat";
@@ -901,18 +1056,22 @@ footer {
   }
   .images img {
       height: 28px;
-      width: 28px;
+      max-width: 28px;
+      width: 100%;
   }
   #Parjad {
       border-radius: 100px;
-      max-width: 150px;
-      height: 223px;
+      max-width: 100px;
+      width: 100%;
+      height: 160px;
   }
   /* PROJECT */
   #Portfolio {
       display: flex;
       flex-direction: column;
       align-items: center;
+        max-width: 250px;
+        width: 100%;
       gap: 10px;
   }
   #section1 {
@@ -922,14 +1081,16 @@ footer {
       justify-content: space-around;
       text-align: center;
       background: var(--blue);
-      width: 250px;
+      max-width: 250px;
+      width: 100%;
       height: 175px;
       border: 10px solid transparent;
       border-image: var(--border) 1;
   }
   #section1 img {
       height: 90px;
-      width: 155px;
+      max-width: 155px;
+      width: 100%;
       display: block;
   }
   #section1 div {
@@ -937,7 +1098,8 @@ footer {
       justify-content: center;
       align-items: center;
       height: 110px;
-      width: 220px;
+      max-width: 220px;
+      width: 100%;
       color: #FFFFFF;
       font-size: 20px;
   }
@@ -947,7 +1109,8 @@ footer {
       flex-direction: column;
       justify-content: space-around;
       text-align: center;
-      width: 250px;
+      max-width: 250px;
+      width: 100%;
       height: 350px;
       gap: 10px;
       margin-top: 10px;
@@ -958,7 +1121,8 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      width: 250px;
+      max-width: 250px;
+      width: 100%;
       height: 175px;
       background: var(--blue);
       border: 10px solid transparent;
@@ -966,7 +1130,8 @@ footer {
   }
   #section3 img,
   #section2 img {
-      width: 180px;
+      max-width: 180px;
+      width: 100%;
       height: 75px;
   }
   #section3 div,
@@ -983,7 +1148,8 @@ footer {
   }
   .skills {
       height: 25px;
-      width: 25px;
+      max-width: 25px;
+      width: 100%;
   }
   #container {
       display: flex;
@@ -1000,7 +1166,8 @@ footer {
       align-items: center;
       justify-content: space-around;
       text-align: center;
-      width: 290px;
+      max-width: 290px;
+      width: 100%;
       height: 455px;
       font-size: 12px;
       color: #FFFFFF;
@@ -1031,7 +1198,8 @@ footer {
       align-items: center;
       justify-content: space-evenly;
       text-align: center;
-      width: 290px;
+      max-width: 290px;
+      width: 100%;
       height: 400px;
       color: #FFFFFF;
       background: var(--blue);
@@ -1039,9 +1207,12 @@ footer {
       border-image: var(--border) 1;
   }
   form div input {
-      width: 380px;
-      height: 50px;
-  }
+    max-width: 90%;
+    width: 100%; 
+    height: 50px;
+    font-size: 12px;
+    padding: 0px;
+}
   form div label {
       text-align: center;
       font-size: 12px;
@@ -1060,11 +1231,13 @@ footer {
       flex-direction: row; 
       align-items: flex-start;
       gap: 10px;
-      width: 75%;
+      max-width: 290px; 
+      width: 100%;
   }
   .img {
       margin-top: 10px;
-      width: 28px;
+      max-width: 28px;
+      width: 100%;
       height: 28px;
   }
   .group {
@@ -1081,11 +1254,12 @@ footer {
       height: 60px;
       font-size: 12px;
   }
-  #logo div {
+  .logo div {
       margin-left: 5px;
   }
   #logo2 {
-      width: 40px;
+      max-width: 40px;
+      width: 100%;
       height: 40px;
       border-radius: 100px;
   }
